@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:wght@300&family=Montserrat:wght@700&display=swap');
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 .custom-font {
+    font-family: 'Audiowide', sans-serif !important;
+    color: #F5F5F5 !important;
+}
+
+p {
+    /* margin-bottom: 20px !important; */
+    font-family: 'Genos', sans-serif;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+li {
+    margin-bottom: 20px !important;
+    font-family: 'Genos', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 12px;
+}
+
+.tab-list li a {
+    color: #9b9898;
+    transition: .2s;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.tab-list li a:hover,
+.tab-list li.active  {
+    color: #fff !important;
+    background: transparent !important;
+
+}
+
+.tab-list li.active a{
+    color: #fff ;
+    font-size: 18px;
+}
+
+.tab-list li a:hover::before ,
+.tab-list li.active a::before {
+    content: "";
+    background: url(/arrow-right.png);
+    height: 21px;
+    width: 21px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    filter: brightness(100);
+    
+}
+
+.tab-list {
+    height: 400px;
+    overflow-y: scroll;
+    direction: rtl;
+  
+   
+}
+
+.tab-list::-webkit-scrollbar {
+    background: #b6b5b5;
+    width: 5px;
+    border-radius: 5px;
+   
+}
+
+.tab-list::-webkit-scrollbar-thumb {
+    background: #807e7e;
+    border-radius: 5px;
+   
+}
+
+.outer-cont {
+    width: 100%;
+    background: #131313;
+    /* padding-bottom: 20px; */
+    /* padding-top: 10px; */
+}
+
+.inner-cont {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.custom-font {
+    font-family: 'Audiowide', sans-serif;
+    color: #F5F5F5;
+}
+
+.is-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

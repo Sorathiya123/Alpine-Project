@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,500;1,500&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:wght@300&family=Montserrat:wght@700&display=swap");
+* {
+  max-width: 1380px;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  color: #c2c2c2;
+  background-color: #131313;
+  font-family: Genos;
+  max-width: 1380px;
+  
+
+}
+
+h1,
+h2 {
+  color: #c2c2c2 !important;
+  font-size: 28px;
+  font-family: Audiowide;
+}
+span {
+  font-family: Genos;
+  font-size: 18px;
+  line-height: 26px;
+}
+p {
+  font-size: 20px;
+  color: #fff !important;
+  
+}
+.font-audiowide {
+  font-family: Audiowide;
+}
+
+
+/* exrta large screen styling -------------------------------------------------- */
+@media screen and (min-width: 1380px) {
+  * {
+    margin: 0 auto; 
+  }
+  
+  .oneImageOfBlog{
+    margin: 0 ;
+  }
+  
+ 
+}
+
+
+
+/* footer icon color and styling ---------------------------------------------------- */
+.footer-icon-color * {
+  color: #c1ae69 !important;
+}
+
+.footer-icon-bgColor {
+  background-color: #c1ae69 !important;
+  padding: 4px;
+}
+
+.footer-icon-bgColor * {
+  color: black !important;
+  font-size: 20px;
+}
+
+/* Contact Us Page Form Styling ----------------------------------------------------- */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("src/assets/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-info h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-info p {
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #ddd;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: none;
+}
+/* mobile screen ------------------------------------------------------------------------- */
+@media only screen and (max-width: 860px) {
+  .portfolio-links {
+    white-space: nowrap;
+  }
+  .portfolio-links li {
+    background-color: transparent !important;
+  }
+  .portfolio-links li.active a {
+    border-bottom: 1px solid #fff;
+  }
+  h1 {
+    font-size: 26px !important;
+  }
+  .text-3xl {
+    font-size: 26px !important;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .contact-form {
+    padding-right: 10px;
+  }
+  .carousel.carousel-slider .control-arrow {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel .slide {
+    padding: 0;
+  }
+  .react-multi-carousel-item {
+    padding: 0;
+  }
+  .portfolio-links {
+    white-space: nowrap;
+  }
+  .portfolio-links li {
+    background-color: transparent !important;
+  }
+  .portfolio-links li.active a {
+    border-bottom: 1px solid #fff;
+  }
+
+  .prev {
+    --b: 1px;
+    --s: 0.35em;
+    --color: #c2c2c2;
+  
+    padding: calc(0.1em + var(--s)) calc(0.6em + var(--s)) !important;
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--color) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p)) !important;
+    transition: 0.3s linear, color 0s, background-color 0s !important;
+  
+    left: 0% !important;
+  
+  }
+  .next {
+  
+    --b: 1px;
+    --s: 0.35em;
+    --color: #c2c2c2;
+    
+    padding: calc(0.1em + var(--s)) calc(0.6em + var(--s)) !important;
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--color) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p)) !important;
+    transition: 0.3s linear, color 0s, background-color 0s !important;
+  
+    right: 0% !important;
+  }
+  .prev::after {
+    /* margin-top: 4px; */
+   font-size: 16px;
+  }
+  .next::after {
+    /* margin-top: 4px; */
+    
+    font-size: 16px;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-next {
+    display: none !important;
+  }
+  .thumbnails img {
+    width: 70px;
+    height: 100px !important;
+    object-fit: fill;
+    margin-top: 50px;
+  }
+  
+  .carousel-image {
+    width: 190px !important;
+    height: 295px !important;
+    object-fit: cover;
+    border-radius: 0px !important;
+    margin-bottom: 20px;
+  }
+
+  .dots {
+    bottom: -178px !important;
+  }
+  .p-6 {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .prev,.next{
+    font-size: 14px !important;
+  }
+}
+
+/* large screen styling -------------------------------------------------------------- */
+@media screen and (min-width: 860px) {
+  .dots {
+    bottom: -400px !important  ;
+  }
+
+  .thumbnails img {
+    width: 152px;
+    height: 200px;
+    object-fit: fill;
+    margin-top: 170px;
+  }
+  h1,h2 {
+    font-size: 28px !important;
+  }
+  .prev {
+    --b: 1px;
+    --s: 0.45em;
+    --color: #c2c2c2;
+  
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s)) !important;
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--color) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p)) !important;
+    transition: 0.3s linear, color 0s, background-color 0s !important;
+  
+    left: -13% !important;
+    
+  }
+  .next {
+    --b: 1px;
+    --s: 0.45em;
+    --color: #c2c2c2;
+    
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s)) !important;
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(
+        from 90deg at var(--b) var(--b),
+        #0000 90deg,
+        var(--color) 0
+      )
+      var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+      calc(100% - var(--b) - 2 * var(--_p)) !important;
+    transition: 0.3s linear, color 0s, background-color 0s !important;
+  
+    right: -13% !important;
+  }
+}
+/* about us page steps card borde style ---------------------------------------------------- */
+.alice-carousel__dots-item .__active {
+  width: 100px !important;
+}
+.border-style.left-bottom {
+  background-image: repeating-linear-gradient(
+      60deg,
+      #333333,
+      #333333 10.34px,
+      transparent 11px,
+      transparent 28.86px,
+      #333333 30px
+    ),
+    repeating-linear-gradient(
+      330deg,
+      #333333,
+      #333333 10.34px,
+      transparent 11px,
+      transparent 28.86px,
+      #333333 30px
+    );
+  background-size: 3px 100%, 100% 3px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.border-style.right-bottom {
+  background-image: repeating-linear-gradient(
+      120deg,
+      #333333,
+      #333333 10.34px,
+      transparent 11px,
+      transparent 28.86px,
+      #333333 30px
+    ),
+    repeating-linear-gradient(
+      330deg,
+      #333333,
+      #333333 10.34px,
+      transparent 11px,
+      transparent 28.86px,
+      #333333 30px
+    );
+  background-size: 3px 100%, 100% 3px;
+  background-position: 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.border-style-right {
+  background-image: repeating-linear-gradient(
+      60deg,
+      #424040,
+      #000000 10.34px,
+      transparent 11px,
+      transparent 28.86px,
+      #000000 30px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #000000,
+      #000000 0.34px,
+      transparent 0.34px,
+      transparent 8.86px,
+      #070707 8.86px
+    );
+  background-size: 3px 100%;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.carousel-container {
+  margin: 20px;
+}
+
+.selected-image {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 8px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__images {
+  display: flex;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel__image-selected {
+  border: 3px solid #ffa700 !important;
+}
+
+.carousel__image {
+  margin-right: 10px;
+  height: 150px;
+  min-width: 150px;
+  border: 3px solid #ffa70000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 40%;
+}
+
+.carousel__button-left {
+  left: 10px;
+}
+
+.carousel__button-right {
+  right: 10px;
+}
+
+/* hero Section slider dots style ------------------------------------------------------------------------*/
+.awssld__bullets button {
+  width: 4px !important;
+  height: 4px !important;
+}
+
+.awssld__bullets .awssld__bullets--active {
+  width: 12px !important;
+  height: 4px !important;
+  border-radius: 10px !important;
+}
+.awssld__bullets--active {
+  background-color: white !important;
+}
+.awssld__bullets {
+  bottom: -30px !important ;
+}
+
+/* services page slider styling ------------------------------------------------------------- */
+.control-dots {
+  bottom: -35px !important ;
+}
+
+.carousel .control-dots .dot {
+  width: 2px !important;
+  height: 1px !important;
+}
+.carousel.carousel-slider .control-arrow {
+  --b: 1px;
+  --s: 0.45em;
+  --color: #c2c2c2;
+
+  padding: calc(0.2em + var(--s)) calc(0.5em + var(--s)) !important;
+  /* padding-left: 20px !important; */
+  /* padding-top: 0 !important; */
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p)) !important;
+  transition: 0.3s linear, color 0s, background-color 0s !important;
+  margin: -5px !important;
+  height: 75px !important;
+  top: 70px !important;
+}
+
+/* Override styles for the next arrow */
+.control-next::before {
+  content: "\2192" !important;
+
+  border: none !important;
+}
+
+/* Override styles for the previous arrow */
+.control-prev::before {
+  content: "\2190" !important;
+  border: none !important;
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+.carousel-item-padding {
+  padding: 0 !important;
+}
+/* .react-multi-carousel-track li{
+  width: 200px ;
+} */
+
+/* project detail page carousel---------------------------------------------------- */
+.alice-carousel__prev-btn-item span {
+  display: block;
+  width: 100px;
+  height: 300px;
+}
+.alice-carousel__play-btn {
+  width: 100px;
+}
+
+.alice-carousel__dots-item,
+.alice-carousel__dots-item:not(.__custom) {
+  height: 3px !important;
+  border-radius: 10px !important;
+  width: 1px !important;
+  min-width: auto !important;
+  background-color: #424040;
+}
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: white;
+  width: 0px !important;
+}
+.alice-carousel__dots {
+  margin-top: 0 !important;
+}
+
+/* some basic styling -------------------------------------------------------------- */
+/* .prev::after {
+  content: "\2190";
+  position: absolute;
+  color: white;
+  left: 20px;
+  top: 27%;
+}
+.next::after {
+  content: "\2192";
+  position: absolute;
+  color: white;
+  left: 20px;
+  top: 27%;
+} */
+
+
+.thumbnails {
+  justify-content: center;
+}
+.carousel-container {
+  background-color: transparent !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.thumbnail {
+  max-width: 100% !important;
+}
+
+
+
+
+.carousel-item {
+  width: auto !important;
+  height: auto !important;
+}
+
+.dots .dot {
+  width: 4px;
+  height: 4px;
+}
+.dot.active {
+  width: 10px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.awssld__timer,.awssld__bar--active,.awssld__bar {
+  height: 0 !important;
+}
+
+.awssld__content > img,
+.awssld__content > video {
+  object-fit: contain !important;
+  background-color: transparent !important;
+}
+.slick-slide {
+  padding-left: 0 !important;
+}
+.awssld {
+  --content-background-color: transparent !important;
+}
+.react-multi-carousel-track li {
+  width: auto !important;
+}
+.slide {
+  justify-content: flex-start;
+}
+
+.carousel-image{
+  border-radius: 0px !important;
+}

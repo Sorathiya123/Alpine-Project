@@ -1,0 +1,18 @@
+.review {
+    height: 200px;
+
+
+}
+
+.review::-webkit-scrollbar {
+    background: #b6b5b5;
+    width: 5px;
+    border-radius: 5px;
+   
+}
+
+.review::-webkit-scrollbar-thumb {
+    background: #807e7e;
+    border-radius: 5px;
+   
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:wght@300&family=Montserrat:wght@700&display=swap');
+.custom-font {
+    font-family: 'Audiowide', sans-serif;
+    color: #F5F5F5;
+}
+
+.is-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 264px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .gallery-image.active {
+    opacity: 1;
+  }
+  

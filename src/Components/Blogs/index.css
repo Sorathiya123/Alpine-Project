@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:wght@300&family=Montserrat:wght@700&display=swap');
+
+
+.btm-btn{
+display: none!important;
+}
+@media(max-width:768px){
+  .btn-fix{
+    display: none;
+  }
+  .btm-btn{
+    display: flex!important;
+    }
+
+
+}
+.react-multi-carousel-item{
+  /* padding: 0; */
+  /* margin-right: 10px; */
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    /* margin-bottom: 20px!important; */
+    font-family: 'Genos', sans-serif;
+    line-height: 30px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  /* text-align: justify; */
+ 
+    
+}
+li{
+    margin-bottom: 20px!important;
+    font-family: 'Genos', sans-serif;
+ 
+}
+
+.outer-cont{
+    width:100%;
+    background:#131313 ;
+ 
+    
+}
+
+
+  h2{
+    font-family: 'Audiowide', sans-serif;
+    color: #F5F5F5;
+  }
