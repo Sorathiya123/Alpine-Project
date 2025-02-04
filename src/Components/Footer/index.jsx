@@ -95,7 +95,7 @@ export default function Footer() {
                                 <div className='flex gap-5 ml-6 mt-4 md:ml-0 z-20 max-w-[200px]'>
                                     <a href="https://www.instagram.com/alpine_niteshkedare" target='blank'><FaInstagram className='footer-icon-color text-2xl' /></a>
                                     <a href="https://www.youtube.com/channel/UCdRvNSO0jybsN3y47FT9eQA" target='blank'><FaYoutube className='footer-icon-color text-2xl' /></a>
-                                    <a href="https://www.linkedin.com/company/alpine-Architects" target='blank'><FaLinkedin className='footer-icon-color text-2xl' /></a>
+                                    <a href="https://www.linkedin.com/company/alpinearchitects/" target='blank'><FaLinkedin className='footer-icon-color text-2xl' /></a>
                                     <a href="https://www.facebook.com/profile.php?id=61556327483727" target='blank'><FaFacebook className='footer-icon-color text-2xl' /></a>
                                 </div>
                             </div>
