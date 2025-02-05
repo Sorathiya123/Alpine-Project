@@ -44,7 +44,7 @@ export default function ContactUs() {
     event.preventDefault();
     console.log(formData);
 
-    fetch('http://localhost:3000/send-email', {
+    fetch('https://mail.alpinearchitects.net/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
