@@ -97,7 +97,7 @@ export default function Portfolio() {
     useEffect(() => {
         filterPhotosByCategory();
         setContentList([]);
-        setDisplayedImagesCount(6)
+        setDisplayedImagesCount(7)
     }, [activeCategory]);
 
     useEffect(() => {
